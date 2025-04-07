@@ -23,7 +23,7 @@ body {
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
-.confirm {
+.confirm { /*moved the .confirm class to the bottem to make the cascade select it as proeminent*/
   background: green;
   color: white;
   font-weight: bold;
@@ -33,6 +33,8 @@ div.text {
   font-size: 22px;
   font-weight: 100;
 }
+/* div.text.child adds more speifity to the rule below, therefore 
+making it more important than the rule above */
 div.text.child {
   color: rgb(0, 0, 0);
   font-weight: 800;
